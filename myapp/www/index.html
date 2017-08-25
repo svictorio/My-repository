@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+.ui-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.ui-btn:hover {background-color: #3e8e41}
+
+.ui-btn:active {
+  background-color: #black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<center><div data-role="page" id="pageone">
+
+  <div data-role="main" class="ui-content">
+  <center><img src="1.png" Height=550 Width=335 ></center>
+    <a href="#pagetwo" data-transition="fade"><button class="ui-btn"> > </button></a>
+  </div>
+  </div>
+
+
+<div data-role="page" id="pagetwo">
+
+  <div data-role="main" class="ui-content">
+  <center><img src="2.png" Height=550 Width=335 ></center>
+  <a href="#pageone" class="ui-btn" data-rel="back"> < </a>
+   <a href="#pagethree"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div> 
+
+<div data-role="page" id="pagethree">
+
+  <div data-role="main" class="ui-content">
+  <center><img src="3.png" Height=550 Width=335 ></center>
+  <a href="#pagetwo" class="ui-btn" data-rel="back"> < </a>
+   <a href="#pagefour"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div> 
+
+<div data-role="page" id="pagefour">
+
+  <div data-role="main" class="ui-content">
+  <center><img src="4.png" Height=550 Width=335 ></center>
+  <a href="#pagethree" class="ui-btn" data-rel="back"> < </a>
+   <a href="#pagefive"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div> 
+
+
+
+
+<div data-role="page" id="pagefive">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="5.png" Height=550 Width=335 ></center>
+  <a href="#pagefour" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pagesix"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+
+<div data-role="page" id="pagesix">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="6.png" Height=550 Width=335 ></center>
+  <a href="#pagefive" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pageseven"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+
+<div data-role="page" id="pageseven">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="7.png" Height=550 Width=335 ></center>
+  <a href="#pagesix" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pageeight"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+<div data-role="page" id="pageeight">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="8.png" Height=550 Width=335 ></center>
+  <a href="#pageseven" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pagenine"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+
+<div data-role="page" id="pagenine">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="9.png" Height=550 Width=335 ></center>
+  <a href="#pageeight" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pageten"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+
+
+<div data-role="page" id="pageten">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="10.png" Height=550 Width=335 ></center>
+  <a href="#pagenine" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pageeleven"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+
+<div data-role="page" id="pageeleven">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="11.png" Height=550 Width=335 ></center>
+  <a href="#pageten" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pagetwelve"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+<div data-role="page" id="pagetwelve">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="12.png" Height=550 Width=335 ></center>
+  <a href="#pageeleven" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pagethirteen"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+<div data-role="page" id="pagethirteen">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="13.png" Height=550 Width=335 ></center>
+  <a href="#pagetwelve" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pagefourteen"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+<div data-role="page" id="pagefourteen">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="14.png" Height=550 Width=335 ></center>
+  <a href="#pagethirteen" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pagefifteen"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+<div data-role="page" id="pagefifteen">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="15.png" Height=550 Width=335 ></center>
+  <a href="#pagefourteen" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pagesixteen"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+<div data-role="page" id="pagesixteen">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="16.png" Height=550 Width=335 ></center>
+  <a href="#pagefifteen" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pageseventeen"data-transition="slide"><button class="ui-btn"> > </button></a>
+  </div>
+</div>
+
+
+<div data-role="page" id="pageseventeen">
+ 
+  <div data-role="main" class="ui-content">
+  <center><img src="17.png" Height=550 Width=335 ></center>
+  <a href="#pagesixteen" class="ui-btn" data-rel="back"> < </a>
+    <a href="#pagetwo"data-transition="slide"><button class="ui-btn"> > </button></a>
+    <a href="#pageone" class="ui-btn" data-rel="back"> BACK </a>
+  </div>
+</div>
+
+
+
+
+
+
+</center>
+
+
+</body>
+</html>
