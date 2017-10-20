@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+body {
+  margin: 0;
+  min-width: 100px;
+  min-height: 500px;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #00EE76;
+  padding: 100px 80px;
+  height: 100px;
+  color: white;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+textarea {
+  border: thin solid #000000;
+  width: 800px;
+  height: 1000px
+  float: center;
+  font-size: 30px;
+  background: #d3d3d3;
+}
+
+
+
+.btn-group .button {
+    background-color: #00EE76; 
+    border: 1px solid green;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+.btn-group .button:not(:last-child) {
+
+    border-right: none; 
+}
+.btn-group .button {
+    position: relative;
+
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-group .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn-group .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.contents {
+	background-color: #d3d3d3;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+<title> TEXTPAD </title>
+</head>
+<div id="myDIV" class="header">
+</div>
+<body>
+<center><br>
+
+<textarea wrap="virtual" placeholder="Enter a Text.." id="sanje" rows="10" cols="50" maxlength="500"></textarea> 
+
+ </center><br><br><br>
+<div class="btn-group">
+
+<button class="button" id="btnSave" onclick="saveData()">Save</button>
+<button class="button" onclick="localStorage.setItem('sanje','');showLS()">Clear</button>
+<button class="button" onclick="showLS()">VIEW CONTENTS</button></div>
+<p style="clear:both"><br></p>
+
+<font size="40tx">
+<center><p>CONTENTS:<br>
+<pre id="contents">
+
+</pre></center></p></center></font><br>
+<script>
+
+function saveData(){
+  var victorio = localStorage.getItem('sanje'), 
+      arr = [];
+  if (!victorio) { victorio = ''; }  
+  arr = victorio.split(',');
+
+  arr.push(document.getElementById("sanje").value);
+  victorio = arr.join(' ');
+  localStorage.setItem("sanje", victorio);
+  showLS();
+}
+
+function showLS() {
+  var ls = localStorage.getItem('sanje');
+  document.getElementById('contents').innerHTML =""+ls.substr(1);
+}
+
+
+</script>
+
+</body>
+</html>
